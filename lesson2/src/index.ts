@@ -47,7 +47,7 @@ class Level {
 }
 
 class Group {
-    _students :any[]= [];
+    _students :Student[]= [];
     directionName:string
     levelName:string
 
@@ -60,12 +60,12 @@ class Group {
         this.levelName = levelName;
     }
 
-    addStudent(student:string) :void {
+    addStudent(student:Student) :void {
         this._students.push(student);
     }
 
-    showPerformance() :any[] {
-        const sortedStudents:any[] = this.students.sort((a:any, b:any) => b.getPerformanceRating() - a.getPerformanceRating()
+    showPerformance()  :Student[]{
+        const sortedStudents:Student[] = this._students.toSorted((a, b) => b.getPerformanceRating() - a.getPerformanceRating()
         );
 
         return sortedStudents;
