@@ -185,7 +185,8 @@ class Student {
         const gradeValues = Object.values(this._grades);
 
         if (!gradeValues.length) return 0;
-        const averageGrade = gradeValues.reduce((sum , grade) => sum + grade, 0) / gradeValues.length; 
+        const averageGrade = gradeValues.reduce((sum , grade) => 
+        sum + grade, 0) / gradeValues.length; 
       const attendancePercentage = (Object.values(this._visits).filter(present => present).length / Object.keys(this._visits).length) * 100;
 
     return (averageGrade + attendancePercentage) / 2;
