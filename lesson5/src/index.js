@@ -59,7 +59,6 @@ var BookService = /** @class */ (function () {
     };
     return BookService;
 }());
-// Використання інтерфейсів для отримання інформації про книги та авторів
 var myBookService = new BookService();
 var books = myBookService.getBooks();
 console.log('Список книг:', books);

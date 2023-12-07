@@ -106,7 +106,7 @@ class BookService implements IBookService {
   }
 
 }
-// Використання інтерфейсів для отримання інформації про книги та авторів
+
 const myBookService: BookService = new BookService();
 
 const books: IBook[] = myBookService.getBooks();
