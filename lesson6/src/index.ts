@@ -5,6 +5,7 @@ interface IFigure {
     print?() :void;
 }
 
+
 class Circle implements IFigure {
     readonly name: string = "circle";
     readonly color: string;
