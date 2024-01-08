@@ -30,3 +30,7 @@ lesson10/package.json
 lesson11/node_modules
 lesson11/package-lock.json
 lesson11/package.json
+lesson11_with_conditional_type/node_modules
+lesson11_with_conditional_type/package-lock.json
+lesson11_with_conditional_type/package.json
+
